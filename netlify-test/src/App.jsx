@@ -1,22 +1,19 @@
 import { LayoutBase } from "./layout/LayoutBase/LayoutBase"
+import {Counter} from "./components/Counter/Counter"
+import './App.css'
 
 function App() {
   return (
     <LayoutBase>
 
-      <main>
-        <h1>Main Content Here</h1>
+      <main className="content-container">
+        <h1>Stateful Applications</h1>
 
         <section>
-          <h2>About Me</h2>
-        </section>
+          <h2>Simple state</h2>
 
-        <section>
-          <h2>Projects</h2>
-        </section>
+          <Counter />
 
-        <section>
-          <h2>Hire Me!</h2>
         </section>
       </main>
 
